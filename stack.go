@@ -55,6 +55,16 @@ func (s Stack) Contains(val interface{}) bool {
 	return false
 }
 
+// Len returns the number of items in the stack
+func (s Stack) Len() int {
+	return len(s.Values)
+}
+
+// Cap returns the capacity of the underlying slice used by the stack
+func (s Stack) Cap() int {
+	return cap(s.Values)
+}
+
 // PopFirst will search through the stack from top to bottom and remove the first element it can find
 // that matches the given `find` parameter, shifting all elements above it down.
 // The matching is done with the `==` operator.

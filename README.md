@@ -24,6 +24,14 @@ Supports the following methods:
 
     Tests whether a value is in the stack
 
+* `Len`
+
+    Gets the number of items in the stack
+
+* `Cap`
+
+    Gets the capacity of the underlying slice
+
 * `PopFirst`
 
     Pops the first value from the top of the stack that matches the given element

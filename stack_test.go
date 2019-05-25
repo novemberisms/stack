@@ -194,3 +194,17 @@ func TestContains(t *testing.T) {
 	expect(t, stack.Contains("sigma"), false)
 
 }
+
+func TestLenCap(t *testing.T) {
+	stack := NewStack(10)
+
+	expect(t, stack.Len(), 0)
+	expect(t, stack.Cap(), 10)
+
+	for i := 0; i < 314; i++ {
+		stack.Push(i)
+	}
+
+	expect(t, stack.Len(), 314)
+	expect(t, stack.Cap() >= 314, true)
+}
