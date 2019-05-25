@@ -4,20 +4,34 @@ This is my implementation of a LIFO stack in Go. Who hasn't made one of these?
 
 Supports the following methods:
 
-* Push
+* `Push`
+    
     Pushes a value unto the stack
-* Pop
+
+* `Pop`
+
     Pops a value from the top of the stack
-* Peek
+
+* `Peek`
+
     Gets the top element of the stack without popping it
-* Bottom
+
+* `Bottom`
+
     Gets the bottom element of the stack without popping it
-* Contains
+
+* `Contains`
+
     Tests whether a value is in the stack
-* PopFirst
+
+* `PopFirst`
+
     Pops the first value from the top of the stack that matches the given element
-* PopLast
+
+* `PopLast`
+
     Pops the first value from the bottom of the stack that matches the given element
+
 
 # Design considerations
 
